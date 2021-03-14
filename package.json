@@ -13,6 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "dev": "postcss src/assets/styles/index.css -o public/style.css --watch",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
