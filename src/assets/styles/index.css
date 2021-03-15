@@ -13,4 +13,12 @@
   @apply uppercase tracking-wide text-2xl text-red-800 font-bold mb-8 text-center;
 }
 
+.form-control {
+  @apply w-full leading-snug text-gray-800 py-1 px-4 bg-gray-100 border border-yellow-200 rounded;
+}
+
+.form-control:hover {
+  @apply bg-white;
+ }
+
 @tailwind utilities;
