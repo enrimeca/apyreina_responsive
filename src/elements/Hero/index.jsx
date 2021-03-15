@@ -8,7 +8,7 @@ const Hero = ({title, company, resume}) => {
         <img className="h-96 w-full object-cover md:w-80" src={Bees} alt="Bees" />
       </figure>
       <article className="p-8">
-        <h1 className="uppercase tracking-wide text-2xl text-red-800 font-bold">{title}</h1>
+        <h1 className="section-title text-left">{title}</h1>
         <h2 className="block mt-1 text-lg leading-tight font-medium text-black">{company}</h2>
         <p className="mt-2 text-gray-500 text-justify">{resume}</p>
       </article>

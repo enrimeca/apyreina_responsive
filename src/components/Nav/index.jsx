@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../../assets/images/logo.png'
+import Logo from '../../assets/images/logo.png';
 
 const Nav = ({options, color}) => {
   const [hidden, setHidden] = useState(true);
@@ -16,7 +16,7 @@ const Nav = ({options, color}) => {
         <figure className="flex-shrink-0">
           <img className="h-16" src={Logo} alt="Logo" />
         </figure>
-        <div className="flex hidden md:block">
+        <div className="hidden md:block">
           {options?.map((item, index) => <a key={index} href="/" className="item-menu">{item}</a>)}
         </div>
         <button type="button" className="flex md:hidden collapse-btn" onClick={toggleMenu}>
@@ -27,7 +27,7 @@ const Nav = ({options, color}) => {
       </section>
       <section className={`md:hidden ${show}`}>
         <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          {options?.map((item, index) => <li><a key={index} href="/" className="item-menu block">{item}</a></li>)}
+          {options?.map((item, index) => <li key={index}><a href="/" className="item-menu block">{item}</a></li>)}
         </ul>
       </section>
     </nav>
