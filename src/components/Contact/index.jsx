@@ -17,7 +17,7 @@ const Contact = () => {
           <span className="font-bold">COMENTARIOS</span>
           <textarea className="form-control" name="" cols="30" rows="10" id="comment"></textarea>
         </label>
-        <button className="block bg-red-500 hover:bg-red-700 text-white uppercase text-lg mx-auto py-2 px-4 rounded my-4" type="submit">Enviar</button>
+        <button className="block bg-red-600 hover:bg-red-800 text-white font-medium uppercase text-base tracking-widest mx-auto py-2 px-4 rounded my-4" type="submit">Enviar</button>
       </form>
     </section>
   )
